@@ -20,7 +20,8 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
-import cn.finalteam.floatviewfinal.widget.FloatView;
+
+import cn.finalteam.floatviewfinal.widget.FloatView2;
 
 /**
  * Desction:Float view service
@@ -29,7 +30,7 @@ import cn.finalteam.floatviewfinal.widget.FloatView;
  */
 public class FloatViewService extends Service{
 
-    private FloatView mFloatView;
+    private FloatView2 mFloatView;
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -40,7 +41,7 @@ public class FloatViewService extends Service{
     @Override
     public void onCreate() {
         super.onCreate();
-        mFloatView = new FloatView(this);
+        mFloatView = new FloatView2(this);
     }
 
     public void showFloat() {
